@@ -1,0 +1,6 @@
+{
+    "log_path": "app.log",
+    "thread_size": 10,
+    "queue_size": 100,
+    "csv_file": "student_data.csv"
+}

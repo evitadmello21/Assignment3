@@ -1,0 +1,54 @@
+2024-08-22 09:37:38,037 - INFO - Logging setup complete.
+2024-08-22 09:37:38,081 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-22 09:37:38,081 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-22 09:37:38,089 - INFO -  * Restarting with stat
+2024-08-22 09:37:39,150 - INFO - Logging setup complete.
+2024-08-22 09:37:39,173 - WARNING -  * Debugger is active!
+2024-08-22 09:37:39,180 - INFO -  * Debugger PIN: 625-052-019
+2024-08-22 09:37:42,431 - INFO - 127.0.0.1 - - [22/Aug/2024 09:37:42] "GET / HTTP/1.1" 200 -
+2024-08-22 09:37:42,486 - INFO - 127.0.0.1 - - [22/Aug/2024 09:37:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-08-22 09:37:44,397 - INFO - 127.0.0.1 - - [22/Aug/2024 09:37:44] "GET /insert HTTP/1.1" 200 -
+2024-08-22 09:38:12,224 - INFO - CSV file read successfully.
+2024-08-22 09:38:12,225 - INFO - CSV file written successfully.
+2024-08-22 09:38:12,225 - INFO - Record inserted: {'RollNo': '16', 'Name': 'Jaya', 'English': '56', 'Maths': '87', 'Science': '89'}
+2024-08-22 09:38:12,226 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:12] "[35m[1mPOST /insert HTTP/1.1[0m" 201 -
+2024-08-22 09:38:13,968 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:13] "GET /insert HTTP/1.1" 200 -
+2024-08-22 09:38:16,333 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:16] "GET /remove HTTP/1.1" 200 -
+2024-08-22 09:38:20,772 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-08-22 09:38:20,772 - INFO - CSV file read successfully.
+2024-08-22 09:38:20,772 - WARNING - Record with RollNo 23 not found.
+2024-08-22 09:38:20,772 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:20] "[33mDELETE /remove/23 HTTP/1.1[0m" 404 -
+2024-08-22 09:38:20,772 - DEBUG - http://127.0.0.1:5000 "DELETE /remove/23 HTTP/11" 404 34
+2024-08-22 09:38:20,772 - INFO - Remove request for RollNo: 23
+2024-08-22 09:38:20,772 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:20] "POST /remove HTTP/1.1" 200 -
+2024-08-22 09:38:22,440 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:22] "GET /remove HTTP/1.1" 200 -
+2024-08-22 09:38:25,430 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-08-22 09:38:25,433 - INFO - CSV file read successfully.
+2024-08-22 09:38:25,435 - INFO - CSV file written successfully.
+2024-08-22 09:38:25,435 - INFO - Record removed: RollNo 3
+2024-08-22 09:38:25,435 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:25] "DELETE /remove/3 HTTP/1.1" 200 -
+2024-08-22 09:38:25,435 - DEBUG - http://127.0.0.1:5000 "DELETE /remove/3 HTTP/11" 200 47
+2024-08-22 09:38:25,435 - INFO - Remove request for RollNo: 3
+2024-08-22 09:38:25,435 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:25] "POST /remove HTTP/1.1" 200 -
+2024-08-22 09:38:27,197 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:27] "GET /remove HTTP/1.1" 200 -
+2024-08-22 09:38:31,464 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:31] "GET /update HTTP/1.1" 200 -
+2024-08-22 09:38:42,204 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-08-22 09:38:42,208 - INFO - CSV file read successfully.
+2024-08-22 09:38:42,209 - INFO - CSV file written successfully.
+2024-08-22 09:38:42,209 - INFO - Record updated: {'RollNo': '16', 'Name': 'Jai', 'English': '56', 'Maths': '87', 'Science': '89'}
+2024-08-22 09:38:42,210 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:42] "PUT /update HTTP/1.1" 200 -
+2024-08-22 09:38:42,211 - DEBUG - http://127.0.0.1:5000 "PUT /update HTTP/11" 200 47
+2024-08-22 09:38:42,212 - INFO - Update request for RollNo: 16
+2024-08-22 09:38:42,212 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:42] "POST /update HTTP/1.1" 200 -
+2024-08-22 09:38:44,121 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:44] "GET /update HTTP/1.1" 200 -
+2024-08-22 09:38:46,312 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:46] "GET /read HTTP/1.1" 200 -
+2024-08-22 09:38:48,953 - INFO - CSV file read successfully.
+2024-08-22 09:38:48,953 - WARNING - Read request: Record with RollNo 3 not found.
+2024-08-22 09:38:48,953 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:48] "[33mGET /read?RollNo=3 HTTP/1.1[0m" 404 -
+2024-08-22 09:38:53,018 - INFO - CSV file read successfully.
+2024-08-22 09:38:53,018 - INFO - Record read: {'RollNo': '6', 'Name': 'Ram', 'English': '33', 'Maths': '89', 'Science': '78'}
+2024-08-22 09:38:53,018 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:53] "GET /read?RollNo=6 HTTP/1.1" 200 -
+2024-08-22 09:38:57,845 - INFO - CSV file read successfully.
+2024-08-22 09:38:57,846 - INFO - Calculated average marks for all students.
+2024-08-22 09:38:57,846 - INFO - 127.0.0.1 - - [22/Aug/2024 09:38:57] "GET /average HTTP/1.1" 200 -
